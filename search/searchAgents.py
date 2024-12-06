@@ -543,8 +543,8 @@ def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
         distance = abs(xp - xd) + abs(yp - yd)
 
         if max_distance < distance:
-            #max_distance = distance
-            max_distance=mazeDistance((xp,yp),(xd,yd), problem.startingGameState)
+            max_distance = distance
+            #max_distance=mazeDistance((xp,yp),(xd,yd), problem.startingGameState)
     return max_distance
 
 
